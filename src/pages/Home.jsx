@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Base>
       <h1>
-     Aplicação React Base
+     Elenco Botafogo w/ Barbie
       </h1>
     </Base>
   )
