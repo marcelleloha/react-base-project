@@ -1,8 +1,8 @@
 const NovoComponente = () => {
     return (
-        <H2>
+        <h1>
             Esse é um Novo Componente
-        </H2>
+        </h1>
     )
 };
 
