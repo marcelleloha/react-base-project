@@ -32,7 +32,7 @@ root.render(
         <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
-        <Rout path= "/nova-pagina" elemente={<Nova/>}/>
+        <Route path= "/nova-pagina" element={<Nova/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>
