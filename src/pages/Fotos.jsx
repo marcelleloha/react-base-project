@@ -1,12 +1,23 @@
 import FotoCard from "../components/FotoCard/FotoCard";
 import ListContainer from "../components/ListContainer/ListContainer";
-import dados from "../data/computadores.json";
+import brutos from "../data/computadores.json";
 import Protegida from "./Protegida";
 
 const Fotos = () => {
  
+  const [dados, setDados] = useState(brutos)
+
+  const filtra = (entrada) => {
+    setDados(dados.filter(
+      (ele) => ele.nome.includes(entrada)
+    ))
+  }
+
   return (
       <Protegida>
+        <input type="text"
+         placeholder="Pesquise Aqui"
+         onChange={(e) => filtra(e.target.value)}/>
         <ListContainer>
           {dados.map(
             (el, index) => (
